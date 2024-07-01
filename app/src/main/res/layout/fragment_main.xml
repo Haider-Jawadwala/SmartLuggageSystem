@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ PackList is an open-source packing-list for Android
+  ~
+  ~ Copyright (c) 2017 Nicolas Bossard and other contributors.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<!-- Main page -->
+<!---->
+<!-- Resources and Ids for this page must start with "main__" -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".gui.TripListFragment">
+
+    <TextView
+        android:id="@+id/main__welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main__welcome"/>
+
+    <Space
+        android:id="@+id/main__space"
+        android:layout_below="@id/main__welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="10dip"/>
+
+    <ListView
+        android:id="@+id/main__trip_list"
+        android:layout_below="@id/main__space"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/trip_adapter"
+        android:background="@color/packlist__list_background"/>
+
+    <!-- View that will be displayed if list is empty only -->
+    <LinearLayout android:id="@+id/main__trip_list_empty"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center"
+                  android:visibility="gone"
+                  android:background="@color/packlist__list_background"
+                  android:orientation="vertical"
+                  tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_work_black_24dp"
+            android:contentDescription="@null"/>
+
+        <TextView android:text="@string/main__no_trip_yet__label"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center">
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

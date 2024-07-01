@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    tools:context=".gui.WeightSensingFragment">
+
+    <!-- Weight Sensing Section -->
+    <TextView
+        android:id="@+id/measureweightText"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight Sensing"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#333333" />
+
+    <!-- Measure Weight Button -->
+    <Button
+        android:id="@+id/measureWeightButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="𓍝 Sense Weight"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:onClick="onButtonClicked" />
+
+    <!-- Weight Display -->
+    <TextView
+        android:id="@+id/weightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#333333" />
+
+    <!-- Gauge View -->
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal">
+
+        <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+                android:id="@+id/swipeRef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.github.lzyzsd.circleprogress.ArcProgress
+                        android:id="@+id/weightGauge"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center_horizontal" />
+
+                </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+            </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+        </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+    <TextView
+        android:id="@+id/max_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Max Weight 20kg"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#333333" />
+
+</LinearLayout>

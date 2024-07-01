@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ PackList is an open-source packing-list for Android
+  ~
+  ~ Copyright (c) 2017 Nicolas Bossard and other contributors.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<!-- This file is used to generate change log dialog for Homelan version in french language -->
+<!-- Each change entry should be prefixed with "NEW", "BUG FIX" or "MINOR" -->
+<!-- Each new entry should be added at end of release block. -->
+
+<changelog bulletedList="true">
+    <changelogversion
+        changeDate="xx décembre 2017"
+        versionName="0.14">
+        <changelogtext>NEW : ISS#66 ajout d'une pop-up pour inciter à noter l'application</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="18 décembre 2017"
+        versionName="0.13">
+        <changelogtext>NEW : ajout support du chinois moderne et traditionel, merci à "myjourney"</changelogtext>
+        <changelogtext>NEW : ajout support de la langue turque</changelogtext>
+        <changelogtext>BUGFIX : amélioration du support du nééerlandais</changelogtext>
+        <changelogtext>NEW : ajout support de l'indonésien, merci à "isaideureka" et "fafarsdq"</changelogtext>
+        <changelogtext>NEW : ajout support de l'espagnol, merci à "Andrés Ignacio Torres"</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="15 novembre 2017"
+        versionName="0.12">
+        <changelogtext>BUGFIX : liste vide d'items quand on revient du background</changelogtext>
+        <changelogtext>Amélioration des couleurs des catégories, plus lisibles</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="25 juin 2017"
+        versionName="0.11">
+        <changelogtext>NEW : Utilisation du TextInputLayout plus joli</changelogtext>
+        <changelogtext>NEW : ISS#45 Ajout d'un paramètre pour l'affichage des dates sur page accueil
+        </changelogtext>
+        <changelogtext>Amélioration des catégories dans la réutilisation</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="3 aout 2016"
+        versionName="0.10.2">
+        <changelogtext>BUGFIX : ISS#42 crash au démarrage (nom de voyage vide), 2ème essai MaterialColor
+        </changelogtext>
+        <changelogtext>NEW : ajout d'une confirmation avant suppression d'un voyage</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="23 juillet 2016"
+        versionName="0.10.1">
+        <changelogtext>BUGFIX : ISS#42 crash au démarrage (nom de voyage vide)</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="21 juillet 2016"
+        versionName="0.10">
+        <changelogtext>NEW : traductions allemandes, merci à Christophe Paccolat</changelogtext>
+        <changelogtext>NEW : ajout icone lettre sur la liste des voyages</changelogtext>
+        <changelogtext>NEW : ajout bouton pour suggérer un item manquant</changelogtext>
+        <changelogtext>NEW : gestion des catégories</changelogtext>
+        <changelogtext>NEW : suggestion d'items et de catégories pendant la saisie</changelogtext>
+        <changelogtext>BUGFIX : ISS#38 import des fichiers textes, les cases à cocher ne sont pas gérées
+        </changelogtext>
+        <changelogtext>BUGFIX : ISS#36 Import de fichiers texte, bouton non visible sur ceratins équipements
+            ou en mode
+            paysage
+        </changelogtext>
+        <changelogtext>BUGFIX : ISS#35 Sauvegarde du mode de tri pour chaque voyage</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="26 mai 2016"
+        versionName="0.9">
+        <changelogtext>NEW : ISS#27 export d'un voyage</changelogtext>
+        <changelogtext>NEW : amélioration tri des items</changelogtext>
+        <changelogtext>NEW : ISS#31 un voyage cloné est par défaut décoché</changelogtext>
+        <changelogtext>NEW : ISS#32 possibilité de décocher tous les items d'un voyage</changelogtext>
+        <changelogtext>NEW : ajout d'illustrations pour les vues de listes vides</changelogtext>
+        <changelogtext>NEW : ajout du nom du voyage en cours dans la barre de titre</changelogtext>
+        <changelogtext>NEW : prise en compte suggestions de Google accessibility app scanner</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="26 avril 2016"
+        versionName="0.8.1">
+        <changelogtext>NEW : ISS#25 ajout de ACRA pour générer des rapports en cas de crash</changelogtext>
+        <changelogtext>NEW : ISS#26 crash à la modification d'un item</changelogtext>
+        <changelogtext>NEW : ISS#22 ajout du poids empaqueté</changelogtext>
+        <changelogtext>NEW : ISS#23 remplacement du texte "EMPAQUETE" par une checkbox</changelogtext>
+        <changelogtext>NEW : ISS#24 tri optionnel basé sur item empaqueté ou non</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="09 avril 2016"
+        versionName="0.8.0">
+        <changelogtext>NEW : ISS#13 gestion du poid de la valise</changelogtext>
+        <changelogtext>NEW : ISS#20 import en masse dans un voyage, par exemple à partir d'une liste externe</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="22 mars 2016"
+        versionName="0.7.1">
+        <changelogtext>BUGFIX : ISS#19 le format de date était ignoré dans les versions android anciennes</changelogtext>
+        <changelogtext>BUGFIX : ISS#21 dans le cas d'une longue liste, le simple clic scroll au début</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="19 march 2016"
+        versionName="0.7.0">
+        <changelogtext>BUGFIX : ISS#15 Correction activité redémarrée à la rotation du téléphone</changelogtext>
+        <changelogtext>BUGFIX : ISS#16 L'item nouvellement ajouté est sous le clavier virtuel</changelogtext>
+        <changelogtext>BUGFIX : ISS#18 crash si un voyage n'a pas de date de départ</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="14 mars 2016"
+        versionName="0.6.0">
+        <changelogtext>NEW : Ajout du nombre de jours restant avant départ dans la liste des voyages</changelogtext>
+        <changelogtext>NEW : ISS10 tri de la liste des voyages par date de départ</changelogtext>
+        <changelogtext>NEW : Ajout possibilité de cloner un précédent voyage</changelogtext>
+        <changelogtext>NEW : Support des tablettes (format paysage)</changelogtext>
+        <changelogtext>NEW : support du Japonais avec l'aide de naofum</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="18 février 2016"
+        versionName="0.5.0">
+        <changelogtext>NEW : ISS5 possibilité de marquer les items comme empaquetés</changelogtext>
+        <changelogtext>Corrigé crash au retour de background</changelogtext>
+        <changelogtext>ISS9 : enlevé l'obfuscation</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="05 février 2016"
+        versionName="0.4.0">
+        <changelogtext>NEW : édition possible du descriptif du voyage</changelogtext>
+        <changelogtext>NEW : ISS4 possibilité de supprimer un item</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="27 janvier 2016"
+        versionName="0.3.0">
+        <changelogtext>NEW : utilisation du composant datetimepicker</changelogtext>
+        <changelogtext>NEW : amélioration de la gestion des champs vide, surtout les dates</changelogtext>
+        <changelogtext>NEW : ajout du numéro de version dans la page à propos</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="24 janvier 2016"
+        versionName="0.2.0">
+        <changelogtext>NEW : ajout de ce changelog</changelogtext>
+        <changelogtext>NEW : possibilité d'ajouter des items à un voyage</changelogtext>
+    </changelogversion>
+    <changelogversion
+        changeDate="06 janvier 2016"
+        versionName="0.1.0">
+        <changelogtext>NEW : version initiale, un peu vide :-)</changelogtext>
+    </changelogversion>
+</changelog>

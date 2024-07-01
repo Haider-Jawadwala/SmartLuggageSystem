@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    tools:context=".gui.FollowMeFragment">
+
+    <!-- Follow Me Section -->
+    <TextView
+        android:id="@+id/followMeText"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Follow Me"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#333333" />
+
+    <!-- Button Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <!-- Left Button -->
+        <Button
+            android:id="@+id/leftButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="← Left"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:onClick="onButtonClicked" />
+
+        <!-- Forward Button -->
+        <Button
+            android:id="@+id/forwardButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="↑ Forward"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:onClick="onButtonClicked" />
+
+        <!-- Right Button -->
+        <Button
+            android:id="@+id/rightButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Right →"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:onClick="onButtonClicked" />
+
+    </LinearLayout>
+
+    <!-- Backward Button -->
+    <Button
+        android:id="@+id/backwardButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="↓ Backward"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:onClick="onButtonClicked" />
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="🚫 Stop"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:onClick="onButtonClicked" />
+
+    <!-- Autonomous Button -->
+    <Button
+        android:id="@+id/autonomousButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Auto"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:onClick="onButtonClicked" />
+
+    <TextView
+        android:id="@+id/seek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Speed Control"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#333333" />
+
+    <SeekBar
+        android:id="@+id/speedSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:progress="100" />
+
+    <TextView
+        android:id="@+id/speedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="13sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#333333" />
+
+    <!-- Graph View -->
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/speedGraphView"
+        android:layout_marginVertical="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
